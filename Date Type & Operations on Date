@@ -1,0 +1,13 @@
+import java.util.Calendar;
+import java.util.Date;
+public class DateType1 {
+    public static void main(String[] args) {
+        Date date = new Date();
+        System.out.println(date);
+        Calendar c = Calendar.getInstance();
+        c.setTime(date);
+        c.add(Calendar.MONTH,2);
+        System.out.println(c.getTime());
+    }
+    
+}
