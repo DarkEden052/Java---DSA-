@@ -1,0 +1,31 @@
+import java.util.LinkedList;
+import java.util.Stack;
+import java.util.Queue;
+public class JavaCollection {
+    public static void main(String[] args) {
+        // LinkedList Data structure 
+        LinkedList <Integer> list = new LinkedList<>();
+        list.add(100);
+        list.add(200);
+        list.add(300);
+        System.out.println(list);
+        // Stack Data Structure 
+        Stack <Integer> stack = new Stack<>();
+        stack.push(500);
+        stack.push(600);
+        stack.push(700);
+        System.out.println(stack);
+        System.out.println(stack.peek());
+        System.out.println(stack.pop());
+        System.out.println(stack.peek());
+        // Queue Data Structure 
+        Queue <Integer> queue = new LinkedList<>();
+        queue.offer(1000);
+        queue.offer(1001);
+        queue.offer(1002);
+        System.out.println(queue);
+        System.out.println(queue.peek());
+        System.out.println(queue.poll());
+        System.out.println(queue.peek());
+    }
+}
