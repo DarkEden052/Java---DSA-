@@ -1,0 +1,12 @@
+import java.math.BigInteger;
+public class BigTypes {
+    public static void main(String[] args) {
+        BigInteger a = new BigInteger("999999999999999999999999");
+        BigInteger b = new BigInteger("190099299229292929900988");
+        // we can't directly use operators here because it use reference type not value 
+        // so we can use pre defined method for implementing a operation
+        BigInteger c = a.add(b);
+        System.out.println(c);
+    }
+    
+}
