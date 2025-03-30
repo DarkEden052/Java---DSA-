@@ -1,0 +1,14 @@
+public class StringDemo {
+    public static void main(String[] args) {
+        String name = "Anubhav";
+        System.out.println(name);
+        String name2 = "Anubhav";
+        System.out.println(name==name2); //name and name2 refer same memory loaction // so it is true
+        String name3= new String("Anubhav");// it point outside the stringpool
+        System.out.println(name==name3);
+        String name4= new String("Anubhav").intern(); //it point inside the stringpool 
+        System.out.println(name==name4);
+        System.out.println(name3.equals(name4));
+    }
+    
+}
