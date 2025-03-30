@@ -1,0 +1,27 @@
+public class StringBuffer1 {
+    public static void main(String[] args) {
+        //StringBuffer and String Builder 
+        StringBuffer name= new StringBuffer("Anubhav");
+        name.append(" ");
+        name.append("Singh");
+        System.out.println(name);
+
+        // String Builder 
+        StringBuilder n = new StringBuilder();
+        n.append("Anubhav"); // add characters in string
+        System.out.println(n.capacity()); // checking capacity of string
+        System.out.println(n.length()); // checking length of String 
+        // initially capacity of StringBuilder is 16 
+        // if String length exceeded than capicity of String then the capacity set to old-capacity*2+2 
+        // if String length exceeded further then string length = capacity 
+        n.append(" is Persuring Degree from  DIT University , Dehradun");
+        System.out.println(n.capacity());
+        System.out.println(n.length());
+        n.append(" Lets check the output");
+        System.out.println(n.capacity());
+        System.out.println(n.length());
+
+
+    }
+    
+}
