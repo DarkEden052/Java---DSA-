@@ -1,0 +1,29 @@
+public class OperatorsEx {
+    public static void main(String[] args) {
+        int a=10,b=6;
+        // Arithmetic Operators
+        int c=a+b;
+        System.out.println(c);
+        int d=a-b;
+        System.out.println(d);
+        // Arithmetic Assignment Operators
+        a+=b;
+        System.out.println(a);
+        a-=b;
+        System.out.println(a);
+        //Relational Operators 
+        System.out.println(a==b);
+        System.out.println(a!=b);
+        System.out.println(a<b);
+        System.out.println(a>b);
+        //Logical Operators
+        int x=20,y=30,z=20;
+        System.out.println(x==y&&x==z);
+        System.out.println(x==y||x==z);
+        //Ternary Operators
+        int age=20;
+        String res = age>=18 ? "You Can Vote" : "You can not Vote";
+        System.out.println(res);
+    }
+    
+}
