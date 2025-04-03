@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class GreaterNumberInThree {
+    public static void main(String[] args) {
+        // int a=5;
+        // int b=6;
+        // int c=2;
+        //Taking the User Input 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Value of a : ");
+        int a = sc.nextInt();
+        System.out.println("Enter the Value of b : ");
+        int b = sc.nextInt();
+        System.out.println("Enter the Value of c : ");
+        int c = sc.nextInt();
+        System.out.println("Value of a :"+a+" \n Value of b :"+b+"\n Value of c :"+c);
+        sc.close();
+        if(a>b){
+            if(a>c){
+                System.out.println("a is Greatest.");
+            }
+            else{
+                System.out.println("c is Greatest.");
+            }
+        }
+        else{
+            if(b>c){
+                System.out.println("b is Greatest.");
+            }
+            else{
+                System.out.println("c is Greatest.");
+            }
+        }
+    }
+    
+}
