@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class SwitchCase3 {
+    // Java 14 onward a arrow is implemented instead of semi colon (;)
+    // And it abolish the need of break class.
+    public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+        System.out.println("Choose Your Choice : ");
+        System.out.println("1.BURGER   2. PIZZA / ROLL   3.DRINKS   4.DESSERT");
+        String item=sc.nextLine();
+        sc.close();
+        switch (item) {
+            case "BURGER" -> {
+            System.out.println("Price of Burger is 200");
+            System.out.println("Veg Burger price is only 100 ");
+            }
+            // Curly braces is allowed and make a block of code 
+            // There is no need of break class 
+
+            // we can add another item in same case
+            case "PIZZA" , "ROLL" -> {
+            System.out.println("Price of Pizza is 150");
+            System.out.println("Price of Roll is 90");
+            }
+            case "DRINKS" ->
+            System.out.println("Price of Drinks is 100");
+            case "DESSERT" ->
+            System.out.println("Price of Dessert is 60");
+            default ->
+            System.out.println("50% off on every items.");
+        }
+    }
+    
+}
