@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class SwitchCase2 {
+    public static void main(String[] args) {
+        // Java 7 onward implemented String in Switch case 
+        //String item = "BURGER";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Choose Your Choice : ");
+        System.out.println("1.BURGER   2. PIZZA   3.DRINKS   4.DESSERT");
+        String item=sc.nextLine();
+        sc.close();
+        switch (item) {
+            case "BURGER" :
+            System.out.println("Price of Burger is 200");
+            break;
+            case "PIZZA" :
+            System.out.println("Price of Pizza is 150");
+            break;
+            case "DRINKS" :
+            System.out.println("Price of Drinks is 100");
+            break;
+            case "DESSERT" :
+            System.out.println("Price of Dessert is 60");
+            break;
+            default :
+            System.out.println("50% off on every items.");
+        }
+    }
+    
+}
