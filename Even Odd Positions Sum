@@ -1,0 +1,36 @@
+//import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class EvenOddPosSum {
+    public static void main(String[] args) throws IOException{
+        int num;
+        BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter Your Number :");
+        num = Integer.parseInt(br.readLine());
+        br.close();
+
+        //Scanner n =new Scanner(System.in);
+        //num=Integer.parseInt(n.nextLine());
+        //n.close();
+        System.out.println("Your Number is : "+num);
+        int Pos=0;
+        int EvenSum=0;
+        int OddSum=0;
+        while(num!=0){
+        int lastDigit=num%10;
+        Pos++;
+        if(Pos%2==0){
+            EvenSum=EvenSum+lastDigit;
+        }
+        else{
+            OddSum = OddSum+lastDigit;
+        }
+        num=num/10;
+    }
+    System.out.println("Even Digit Sum :"+EvenSum);
+    System.out.println("Odd Digit Sum :"+OddSum);
+    }
+    
+}
