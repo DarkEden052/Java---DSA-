@@ -1,0 +1,36 @@
+import java.util.*;
+public class DiagonalSum1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your Matrix :");
+        int matrix[][] =new int[4][4];
+        for(int i=0;i<matrix.length;i++){
+            for(int j= 0;j<matrix[0].length;j++){
+                matrix[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix[0].length;j++){
+                System.out.print(matrix[i][j]+" ");
+            }
+            System.out.println();
+        }
+        sc.close();
+        System.out.println(diagonalSum(matrix));
+    }
+    public static int diagonalSum(int matrix[][]){
+        int sum=0;
+        for(int i=0; i<matrix.length;i++){
+            for(int j=0;j<matrix[0].length;j++){
+                if(i==j){
+                    sum=sum+matrix[i][j];
+                }
+                else if(i+j==matrix.length-1){
+                    sum=sum+matrix[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+    
+}
